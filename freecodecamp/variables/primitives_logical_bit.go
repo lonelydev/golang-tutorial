@@ -23,4 +23,20 @@ func main() {
 	fmt.Printf("the value of a^b (a xor b) is %v and type is %T\n", xorResult, xorResult)
 	nandResult := a &^ b // 0100
 	fmt.Printf("the value of a&^b (a nand b) is %v and type is %T\n", nandResult, nandResult)
+
+	fmt.Printf("\n\n*****+*****+*****+*****\n")
+	fmt.Printf("Let us do some bit shifting operations\n")
+	fmt.Printf("*****+*****+*****+*****\n")
+
+	// 01, 10, 11, 100, 101, 110, 111, 1000
+	// 00001000
+	// 00010000
+	// 00100000
+	// 01000000
+	bitShiftVar := 8
+	fmt.Printf("the value of bitShiftVar is %v\n", bitShiftVar)
+	fmt.Printf("the value of bitShiftVar left shifted once is %v\n", bitShiftVar << 1)
+	fmt.Printf("the value of bitShiftVar left shifted three times is %v\n", bitShiftVar << 3)
+	fmt.Printf("the value of bitShiftVar right shifted once is %v\n", bitShiftVar >> 1)
+	fmt.Printf("the value of bitShiftVar right shifted twice is %v\n", bitShiftVar >> 2)
 }
