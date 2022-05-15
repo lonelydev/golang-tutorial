@@ -33,8 +33,6 @@ func main() {
 	fmt.Printf("the value of a is %v and type is %T\n", a, a)
 	fmt.Printf("the value of b is %v and type is %T\n", b, b)
 	fmt.Printf("the value of c is %v and type is %T\n", c, c)
-
-	
 	
 	// float 
 	fmt.Printf("\n\n*****+*****+*****+*****\n")
