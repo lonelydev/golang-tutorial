@@ -34,19 +34,7 @@ func main() {
 	fmt.Printf("the value of b is %v and type is %T\n", b, b)
 	fmt.Printf("the value of c is %v and type is %T\n", c, c)
 
-	fmt.Printf("\n\n*****+*****+*****+*****\n")
-	fmt.Printf("Let us check out logical operations\n")
-	fmt.Printf("*****+*****+*****+*****\n")
-
-	// logical operations on int
-	orResult := a | b // 1011
-	fmt.Printf("the value of orResult is %v and type is %T\n", orResult, orResult)
-	andResult := a & b // 0010
-	fmt.Printf("the value of andResult is %v and type is %T\n", andResult, andResult)
-	xorResult := a ^ b // 1001 
-	fmt.Printf("the value of xorResult is %v and type is %T\n", xorResult, xorResult)
-	nandResult := a &^ b // 0100
-	fmt.Printf("the value of nandResult is %v and type is %T\n", nandResult, nandResult)
+	
 	
 	// float 
 	fmt.Printf("\n\n*****+*****+*****+*****\n")
