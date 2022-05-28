@@ -64,7 +64,7 @@ func main() {
 	thirdSlice := oneToTenSlice[3:]
 	fmt.Printf("thirdSlice: %v\n", thirdSlice)
 
-	// slice of all elements upto the 4th element
+	// create a new slice of all elements upto the 4th element
 	fourthSlice := oneToTenSlice[:3]
 	fmt.Printf("fourthSlice: %v\n", fourthSlice)
 
@@ -78,5 +78,18 @@ func main() {
 
 	firstFourTestSlice := testSlice[:len(testSlice)-1]
 	fmt.Printf("firstFourTestSlice: %v\n", firstFourTestSlice)
+
+	// create a new slice using make()
+	// initialize values to zero
+	newArray := make([]int, 3, 100)
+	fmt.Printf("Length: %v\n", len(newArray))
+	fmt.Printf("Capacity: %v\n", cap(newArray))
+	fmt.Printf("newArray: %v\n", newArray)
+
+	appendArray := []int{1, 2, 3, 4, 5}
+	fmt.Printf("%v\n", appendArray)
+	appendSecondArray := append(appendArray[:2], appendArray[3:]...)
+	fmt.Printf("%v\n", appendSecondArray)
+	fmt.Printf("%v\n", appendArray)
 
 }
